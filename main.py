@@ -12,7 +12,8 @@ def main():
         user_input = input("Enter a database identifier: ")
         if user_input == 'quit':
             break
-        ctx = interpreter.make_zero_shot_prompt(user_input)
+        # ctx = interpreter.make_zero_shot_prompt(user_input)
+        ctx = interpreter.make_few_shot_prompt(user_input)
         print(ctx)
         response = call_gpt(ctx)
         print(response)
@@ -35,8 +36,17 @@ Using the following text extracted from a data dictionary:
 {context_str}
 
 In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
-Create a descriptive database identifier using complete words to represent abbreviations and acronyms for only the identifier {identifier}:
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier {identifier}:
 """
+        return prompt
+    
+    def make_few_shot_prompt(self, identifier: str, example_limit: int = 10) -> str:
+        context = self.get_context_around_identifier(identifier)
+        prompt_file = open('./prompts/fewshot.txt', 'r')
+        prompt = prompt_file.read()
+        prompt_file.close()
+        prompt = prompt.replace('__IDENTIFIER__', identifier)
+        prompt = prompt.replace('__CONTEXT__', "\n".join(context))
         return prompt
 
     def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
@@ -63,7 +73,7 @@ class PdfDataDictInterpreter(DataDictInterpreter):
         print("Indexing PDF")
         self.index = self.index_dictionary_file(self.pdf)
         print("Indexed PDF")
-        self.beam_width = 100
+        self.beam_width = 200
 
 
     def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
@@ -86,10 +96,15 @@ class PdfDataDictInterpreter(DataDictInterpreter):
         # Create an index of words to pages and word positions
         index = defaultdict(list)
         for pg_ix, page in enumerate(file_obj.pages):
-            char_count = 0
-            for word in page.extract_text().lower().split():
-                index[word].append((pg_ix, char_count))
-                char_count += (len(word) + 1)
+            page_text = page.extract_text().lower()
+            for word in page_text.split():
+                last_found_entry = index[word][-1] if len(index[word]) > 0 else None
+                if last_found_entry != None and last_found_entry[0] == pg_ix:
+                    # If the word was found on the same page, append the new position
+                    index[word][-1] = (pg_ix, page_text.find(word, last_found_entry[1] + 1))
+                else:
+                    # Otherwise, add a new entry
+                    index[word].append((pg_ix, page_text.find(word)))
         return index
 
 
