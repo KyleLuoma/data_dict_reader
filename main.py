@@ -4,9 +4,8 @@ from callgpt import call_gpt
 import pandas as pd
 
 
-
 def main():
-    interpreter = PdfDataDictInterpreter('./pdf/repaired.pdf')
+    interpreter = PdfDataDictInterpreter('./pdf/SRC2022ReadMe_Group IV.pdf')
 
     while True:
         user_input = input("Enter a database identifier: ")
@@ -18,6 +17,11 @@ def main():
         response = call_gpt(ctx)
         print(response)
 
+
+def test_driver():
+    interpreter = XmlDataDictInterpreter('./xml/ATBI_plots_20150511_atribs.xml')
+    ctx = interpreter.make_zero_shot_prompt('MPD')
+    print(ctx)
 
 
 class DataDictInterpreter:
@@ -108,5 +112,53 @@ class PdfDataDictInterpreter(DataDictInterpreter):
         return index
 
 
+class XmlDataDictInterpreter(DataDictInterpreter):
+    """
+    This class is used to interpret an XML data dictionary
+    """
+
+    def __init__(self, xml_file: str):
+        super().__init__()
+        print("Loading XML")
+        self.xml_text = open(xml_file, 'r').read()
+        xml_text = self.xml_text.replace('<', ' <').replace('>', '> ')
+        xml_text = xml_text.replace('\n', ' ').replace('\t', ' ')
+        xml_text = xml_text.lower()
+        while '  ' in xml_text:
+            xml_text = xml_text.replace('  ', ' ')
+        self.xml_list = xml_text.split(' ')
+        print("Loaded XML")
+        print("Indexing XML")
+        self.index = self.index_dictionary_file(self.xml_text)
+        print("Indexed XML")
+        self.beam_width = 15
+
+
+    def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
+        if beam_width == None:
+            beam_width = self.beam_width
+
+        identifier = identifier.lower()
+        locations = self.index[identifier]
+
+        context_list = []
+
+        for loc in locations:
+            start_ix = max(0, loc - 1)
+            stop_ix = min(len(self.xml_list), loc + beam_width)
+            context_list.append(" ".join(self.xml_list[start_ix : stop_ix]))
+
+        print(context_list)
+
+        return context_list
+
+
+    def index_dictionary_file(self, file_obj) -> defaultdict:
+        index = defaultdict(list)
+        for ix, word in enumerate(self.xml_list):
+            index[word].append(ix)
+        return index
+
 if __name__ == '__main__':
-    main()
+    test_driver()
+    # main()
