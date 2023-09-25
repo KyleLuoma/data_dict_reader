@@ -1,5 +1,3 @@
-Enter a database identifier: num_teach_inexp
-
 Using the following text extracted from a data dictionary:
 r school  Text  255
 YEAR  Reporting Year (2021 for 2020 -21; 2022 for 2021 -22) Number  4
