@@ -1,0 +1,17 @@
+[
+    {
+        "database" : "NorthernPlainsFireManagement",
+        "dictionary" : "ATBI_plots_20150511_atribs.xml",
+        "file_type" : "xml"
+    },
+    {
+        "database" : "NYSED_SRC2022",
+        "dictionary" : "SRC2022ReadMe_Group IV.pdf",
+        "file_type" : "pdf"
+    },
+    {
+        "database" : "NTSB",
+        "dictionary" : "CISS_Manual.pdf",
+        "file_type" : "pdf"
+    }
+]
