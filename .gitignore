@@ -1,4 +1,5 @@
 /venv/
-/pdf/
+/pdf/*.pdf
+/xml/*.xml
 /.local/
 __pycache__/

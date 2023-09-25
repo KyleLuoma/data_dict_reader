@@ -228,6 +228,7 @@ class PdfDataDictInterpreter(DataDictInterpreter):
         self.beam_width = 200
 
 
+
     def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
         """ Returns the context around an identifier in a data dictionary
         
@@ -254,6 +255,7 @@ class PdfDataDictInterpreter(DataDictInterpreter):
         return context_list
 
 
+
     def index_dictionary_file(self, file_obj: PdfReader) -> defaultdict:
         """ Indexes a PDF data dictionary file
 
@@ -277,6 +279,7 @@ class PdfDataDictInterpreter(DataDictInterpreter):
                     # Otherwise, add a new entry
                     index[word].append((pg_ix, page_text.find(word)))
         return index
+
 
 
 class XmlDataDictInterpreter(DataDictInterpreter):
@@ -313,6 +316,7 @@ class XmlDataDictInterpreter(DataDictInterpreter):
         self.beam_width = 15
 
 
+
     def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
         """ Returns the context around an identifier in a data dictionary
 
@@ -342,6 +346,7 @@ class XmlDataDictInterpreter(DataDictInterpreter):
         return context_list
 
 
+
     def index_dictionary_file(self, file_obj) -> defaultdict:
         """ Indexes an XML data dictionary file
 
@@ -351,11 +356,13 @@ class XmlDataDictInterpreter(DataDictInterpreter):
         Returns:
             A defaultdict mapping words to a list of locations in the document
         """
-        
+
         index = defaultdict(list)
         for ix, word in enumerate(self.xml_list):
             index[word].append(ix)
         return index
+
+
 
 if __name__ == '__main__':
     # test_driver()
