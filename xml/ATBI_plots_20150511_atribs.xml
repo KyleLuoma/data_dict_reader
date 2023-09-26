@@ -1,2061 +1,2061 @@
 <metadata>
-<eainfo>
-<detailed>
-<enttyp>
-<enttypl>tbl_Deadwood</enttypl>
-<enttypd>Data collected for course woody debris with the plot</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Data_ID</attrlabl>
-<attrdef>MA. Field data table row identifier (Data_ID)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_ID</attrlabl>
-<attrdef>Link to tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>OldPlot</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Module</attrlabl>
-<attrdef>Module number; link to tlu_Mod_Num</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Decay</attrlabl>
-<attrdef>decay stage of down deadwood; link to tlu_DecayStage</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>MPD</attrlabl>
-<attrdef>midpoint diameter in meters</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Length</attrlabl>
-<attrdef>length in meters</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>X_coord</attrlabl>
-<attrdef>X coordinate used to map deadwood location on plot map</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<rdom>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Deadwood</enttypl>
+                <enttypd>Data collected for course woody debris with the plot</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Data_ID</attrlabl>
+                <attrdef>MA. Field data table row identifier (Data_ID)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_ID</attrlabl>
+                <attrdef>Link to tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>OldPlot</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Module</attrlabl>
+                <attrdef>Module number; link to tlu_Mod_Num</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Decay</attrlabl>
+                <attrdef>decay stage of down deadwood; link to tlu_DecayStage</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>MPD</attrlabl>
+                <attrdef>midpoint diameter in meters</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Length</attrlabl>
+                <attrdef>length in meters</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>X_coord</attrlabl>
+                <attrdef>X coordinate used to map deadwood location on plot map</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin>0</rdommin>
-<rdommax>11</rdommax>
-</rdom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Y_coord</attrlabl>
-<attrdef>Y coordinate used to map deadwood location on plot map</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<rdom>
+                        <rdommin>0</rdommin>
+                        <rdommax>11</rdommax>
+                    </rdom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Y_coord</attrlabl>
+                <attrdef>Y coordinate used to map deadwood location on plot map</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin>0</rdommin>
-<rdommax>11</rdommax>
-</rdom>
-</attrdomv>
-</attr>
+                        <rdommin>0</rdommin>
+                        <rdommax>11</rdommax>
+                    </rdom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Events</enttypl>
-<enttypd>M. Sampling events.</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Event_ID</attrlabl>
-<attrdef>Identifier for tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Location_ID</attrlabl>
-<attrdef>Link to tbl_Locations</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_Date</attrlabl>
-<attrdef>Starting date for the event (Start_Date)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Date</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Crew_Members</attrlabl>
-<attrdef>Personnel collecting the data</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_Notes</attrlabl>
-<attrdef>Notes pertaining to the Event</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Updated_Date</attrlabl>
-<attrdef>Date record was entered into database</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Date</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Events</enttypl>
+                <enttypd>M. Sampling events.</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Event_ID</attrlabl>
+                <attrdef>Identifier for tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Location_ID</attrlabl>
+                <attrdef>Link to tbl_Locations</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_Date</attrlabl>
+                <attrdef>Starting date for the event (Start_Date)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Date</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Crew_Members</attrlabl>
+                <attrdef>Personnel collecting the data</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_Notes</attrlabl>
+                <attrdef>Notes pertaining to the Event</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Updated_Date</attrlabl>
+                <attrdef>Date record was entered into database</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Date</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Locations</enttypl>
-<enttypd>M. Sampling unit locations.</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Location_ID</attrlabl>
-<attrdef>Identifier for tbl_Locations</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Plot_ID</attrlabl>
-<attrdef>Code for location name, primary key that links to tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>X_Coord</attrlabl>
-<attrdef>X coordinate</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<rdom>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Locations</enttypl>
+                <enttypd>M. Sampling unit locations.</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Location_ID</attrlabl>
+                <attrdef>Identifier for tbl_Locations</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Plot_ID</attrlabl>
+                <attrdef>Code for location name, primary key that links to tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>X_Coord</attrlabl>
+                <attrdef>X coordinate</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin></rdommin>
-<rdommax></rdommax>
-<attrmres>1</attrmres>
-</rdom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Y_Coord</attrlabl>
-<attrdef>Y coordinate</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<rdom>
+                        <rdommin></rdommin>
+                        <rdommax></rdommax>
+                        <attrmres>1</attrmres>
+                    </rdom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Y_Coord</attrlabl>
+                <attrdef>Y coordinate</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin></rdommin>
-<rdommax></rdommax>
-<attrmres>1</attrmres>
-</rdom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Plot_Azimuth</attrlabl>
-<attrdef>Azimuth of the centter line of the plot</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<rdom>
+                        <rdommin></rdommin>
+                        <rdommax></rdommax>
+                        <attrmres>1</attrmres>
+                    </rdom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Plot_Azimuth</attrlabl>
+                <attrdef>Azimuth of the centter line of the plot</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin>0</rdommin>
-<rdommax>360</rdommax>
-</rdom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Trail</attrlabl>
-<attrdef>Nearest trail to the plot</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>60</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Directions</attrlabl>
-<attrdef>Directions to the plot</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SiteDescription</attrlabl>
-<attrdef>Unusual or important notes about a plot</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Slope</attrlabl>
-<attrdef>Slope in degrees perpendicular to the plot center line</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Aspect</attrlabl>
-<attrdef>Aspect of the slope</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<rdom>
+                        <rdommin>0</rdommin>
+                        <rdommax>360</rdommax>
+                    </rdom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Trail</attrlabl>
+                <attrdef>Nearest trail to the plot</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>60</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Directions</attrlabl>
+                <attrdef>Directions to the plot</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SiteDescription</attrlabl>
+                <attrdef>Unusual or important notes about a plot</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Slope</attrlabl>
+                <attrdef>Slope in degrees perpendicular to the plot center line</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Aspect</attrlabl>
+                <attrdef>Aspect of the slope</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin>0</rdommin>
-<rdommax>360</rdommax>
-<attrmres>1</attrmres>
-</rdom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Slope_shape</attrlabl>
-<attrdef>Link to tlu_Slope_Shape</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>10</attwidth>
-<attrdomv>
-<udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Topo_Position</attrlabl>
-<attrdef>Topographic position of the plot, link to tlu_topo_position</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Elevation</attrlabl>
-<attrdef>Elevation in meters</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>A_Horizon</attrlabl>
-<attrdef>depth of the A horizon</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Litter_depth</attrlabl>
-<attrdef>depth of the litter layer</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Agriculture</attrlabl>
-<attrdef>evidence of past agricultural use</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<edom>
-<edomv>No</edomv>
-<edomvd>No</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>Yes</edomv>
-<edomvd>Yes</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+                        <rdommin>0</rdommin>
+                        <rdommax>360</rdommax>
+                        <attrmres>1</attrmres>
+                    </rdom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Slope_shape</attrlabl>
+                <attrdef>Link to tlu_Slope_Shape</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>10</attwidth>
+                <attrdomv>
+                    <udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Topo_Position</attrlabl>
+                <attrdef>Topographic position of the plot, link to tlu_topo_position</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Elevation</attrlabl>
+                <attrdef>Elevation in meters</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A_Horizon</attrlabl>
+                <attrdef>depth of the A horizon</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Litter_depth</attrlabl>
+                <attrdef>depth of the litter layer</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Agriculture</attrlabl>
+                <attrdef>evidence of past agricultural use</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>No</edomv>
+                        <edomvd>No</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>Yes</edomv>
+                        <edomvd>Yes</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>QuadName</attrlabl>
-<attrdef>Name of USGS quad where plot is located</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>100</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Logging</attrlabl>
-<attrdef>Evidense of past logging</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<edom>
-<edomv>No</edomv>
-<edomvd>No</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>Yes</edomv>
-<edomvd>Yes</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>QuadName</attrlabl>
+                <attrdef>Name of USGS quad where plot is located</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>100</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Logging</attrlabl>
+                <attrdef>Evidense of past logging</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>No</edomv>
+                        <edomvd>No</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>Yes</edomv>
+                        <edomvd>Yes</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Fire</attrlabl>
-<attrdef>Evidence of fire</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<edom>
-<edomv>No</edomv>
-<edomvd>No</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>Yes</edomv>
-<edomvd>Yes</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Fire</attrlabl>
+                <attrdef>Evidence of fire</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>No</edomv>
+                        <edomvd>No</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>Yes</edomv>
+                        <edomvd>Yes</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Pine_beetle</attrlabl>
-<attrdef>Evidense of southern pine beetle</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<edom>
-<edomv>No</edomv>
-<edomvd>No</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>Yes</edomv>
-<edomvd>Yes</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Pine_beetle</attrlabl>
+                <attrdef>Evidense of southern pine beetle</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>No</edomv>
+                        <edomvd>No</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>Yes</edomv>
+                        <edomvd>Yes</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Windstorm</attrlabl>
-<attrdef>Evidense of windthrough</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<edom>
-<edomv>No</edomv>
-<edomvd>No</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>Yes</edomv>
-<edomvd>Yes</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Windstorm</attrlabl>
+                <attrdef>Evidense of windthrough</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>No</edomv>
+                        <edomvd>No</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>Yes</edomv>
+                        <edomvd>Yes</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Hogs</attrlabl>
-<attrdef>Evidense of recent hog rooting</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<edom>
-<edomv>No</edomv>
-<edomvd>No</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>Yes</edomv>
-<edomvd>Yes</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Hogs</attrlabl>
+                <attrdef>Evidense of recent hog rooting</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>No</edomv>
+                        <edomvd>No</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>Yes</edomv>
+                        <edomvd>Yes</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Other_Disturbance</attrlabl>
-<attrdef>Other disturbance of note</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Loc_Notes</attrlabl>
-<attrdef>General notes on the location (Loc_Notes)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Association_observed</attrlabl>
-<attrdef>observed specific habitat: ELcode as used by TNC</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>Unable to resolve domain.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Eco_Notes</attrlabl>
-<attrdef>notes relevant to observed EcoGroup or Association</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>PlaceNameID</attrlabl>
-<attrdef>Link to tlu_PlaceNames</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>GIS_Location_ID</attrlabl>
-<attrdef>Link to GIS feature, equivalent to NPS_Location_ID (GIS_Loc_ID)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>GUID</attrtype>
-<attwidth>16</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Coord_Units</attrlabl>
-<attrdef>Coordinate distance units (Coord_Unit)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Coord_System</attrlabl>
-<attrdef>Coordinate system (Coord_Syst)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>UTM_Zone</attrlabl>
-<attrdef>UTM Zone (UTM_Zone)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Datum</attrlabl>
-<attrdef>Datum of mapping ellipsoid (Datum)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>5</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Est_H_Error</attrlabl>
-<attrdef>Estimated horizontal accuracy (Est_H_Error)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Accuracy_Notes</attrlabl>
-<attrdef>Positional accuracy notes (Acc_Notes)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Unit_Code</attrlabl>
-<attrdef>Park, Monument or Network code (Unit_Code)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>12</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Updated_Date</attrlabl>
-<attrdef>Date of entry or last change (Upd_Date)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+            </attr>
+            <attr>
+                <attrlabl>Other_Disturbance</attrlabl>
+                <attrdef>Other disturbance of note</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Loc_Notes</attrlabl>
+                <attrdef>General notes on the location (Loc_Notes)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Association_observed</attrlabl>
+                <attrdef>observed specific habitat: ELcode as used by TNC</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>Unable to resolve domain.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Eco_Notes</attrlabl>
+                <attrdef>notes relevant to observed EcoGroup or Association</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>PlaceNameID</attrlabl>
+                <attrdef>Link to tlu_PlaceNames</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>GIS_Location_ID</attrlabl>
+                <attrdef>Link to GIS feature, equivalent to NPS_Location_ID (GIS_Loc_ID)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>GUID</attrtype>
+                <attwidth>16</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Coord_Units</attrlabl>
+                <attrdef>Coordinate distance units (Coord_Unit)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Coord_System</attrlabl>
+                <attrdef>Coordinate system (Coord_Syst)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>UTM_Zone</attrlabl>
+                <attrdef>UTM Zone (UTM_Zone)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Datum</attrlabl>
+                <attrdef>Datum of mapping ellipsoid (Datum)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>5</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Est_H_Error</attrlabl>
+                <attrdef>Estimated horizontal accuracy (Est_H_Error)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Accuracy_Notes</attrlabl>
+                <attrdef>Positional accuracy notes (Acc_Notes)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Unit_Code</attrlabl>
+                <attrdef>Park, Monument or Network code (Unit_Code)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>12</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Updated_Date</attrlabl>
+                <attrdef>Date of entry or last change (Upd_Date)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Nests</enttypl>
-<enttypd>Data collected in nested sub-plots</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Nest_ID</attrlabl>
-<attrdef>Identifier for tbl_Nests</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_ID</attrlabl>
-<attrdef>Link to tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SpCode</attrlabl>
-<attrdef>Seven letter species code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Module</attrlabl>
-<attrdef>Plot module of occurance, link to tlu_Mod_Num</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Presence_First</attrlabl>
-<attrdef>Presence class of species in first nested corner within module, link to tlu_Presence</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Cover</attrlabl>
-<attrdef>Cover class of species for entire 10x10 module</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Presence_Second</attrlabl>
-<attrdef>Presence class of species in second nested corner within module, link to tlu_Presence</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>R1</attrlabl>
-<attrdef>Presence class of species in the rest of the plot, link to tlu_R1_RestOfPlot</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<rdom>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Nests</enttypl>
+                <enttypd>Data collected in nested sub-plots</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Nest_ID</attrlabl>
+                <attrdef>Identifier for tbl_Nests</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_ID</attrlabl>
+                <attrdef>Link to tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SpCode</attrlabl>
+                <attrdef>Seven letter species code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Module</attrlabl>
+                <attrdef>Plot module of occurance, link to tlu_Mod_Num</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Presence_First</attrlabl>
+                <attrdef>Presence class of species in first nested corner within module, link to tlu_Presence</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Cover</attrlabl>
+                <attrdef>Cover class of species for entire 10x10 module</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Presence_Second</attrlabl>
+                <attrdef>Presence class of species in second nested corner within module, link to tlu_Presence</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>R1</attrlabl>
+                <attrdef>Presence class of species in the rest of the plot, link to tlu_R1_RestOfPlot</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin>0</rdommin>
-<rdommax>2</rdommax>
-<attrmres>1</attrmres>
-</rdom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>R2</attrlabl>
-<attrdef>Cover class of species in the rest of the plot, link to tlu_Cover_Cls</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<rdom>
+                        <rdommin>0</rdommin>
+                        <rdommax>2</rdommax>
+                        <attrmres>1</attrmres>
+                    </rdom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>R2</attrlabl>
+                <attrdef>Cover class of species in the rest of the plot, link to tlu_Cover_Cls</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <rdom>
 
-<rdommin>0</rdommin>
-<rdommax>11</rdommax>
-<attrmres>1</attrmres>
-</rdom>
-</attrdomv>
-</attr>
+                        <rdommin>0</rdommin>
+                        <rdommax>11</rdommax>
+                        <attrmres>1</attrmres>
+                    </rdom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Overstory</enttypl>
-<enttypd>Overstory (tree) data</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Overstory_ID</attrlabl>
-<attrdef>Identifier for tbl_Overstory</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_ID</attrlabl>
-<attrdef>Link to tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>TreeTag</attrlabl>
-<attrdef>Link to tbl_Tree_Tags</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SpCode</attrlabl>
-<attrdef>redundant data field for validation</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>DBH</attrlabl>
-<attrdef>Tree diameter at 1.37 meter</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>CanPos</attrlabl>
-<attrdef>canopy position of sampled tree, link to tlu_Can_Pos</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>TreeCond</attrlabl>
-<attrdef>Condition class indicating percent dieback of the tree, link to tlu_Tree_Cond</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>notes</attrlabl>
-<attrdef>notes on tree measurements</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Overstory</enttypl>
+                <enttypd>Overstory (tree) data</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Overstory_ID</attrlabl>
+                <attrdef>Identifier for tbl_Overstory</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_ID</attrlabl>
+                <attrdef>Link to tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TreeTag</attrlabl>
+                <attrdef>Link to tbl_Tree_Tags</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SpCode</attrlabl>
+                <attrdef>redundant data field for validation</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DBH</attrlabl>
+                <attrdef>Tree diameter at 1.37 meter</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CanPos</attrlabl>
+                <attrdef>canopy position of sampled tree, link to tlu_Can_Pos</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TreeCond</attrlabl>
+                <attrdef>Condition class indicating percent dieback of the tree, link to tlu_Tree_Cond</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Error encountered when harvesting domain - unable to resolve domain.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>notes</attrlabl>
+                <attrdef>notes on tree measurements</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Saplings</enttypl>
-<enttypd>Sapling (&lt; 10 cm @ dbh) data</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Saplings_ID</attrlabl>
-<attrdef>Identifier for tbl_Saplings</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_ID</attrlabl>
-<attrdef>Link to tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Module</attrlabl>
-<attrdef>Module of data collection, link to tlu_Mod_Num</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>spcode</attrlabl>
-<attrdef>Seven letter species code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>DClass1</attrlabl>
-<attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh; Diameter class (0-0.99)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>DClass2</attrlabl>
-<attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh; Diameter class (1.0-2.49)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>DClass3</attrlabl>
-<attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh;Diameter class (2.5-4.99)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>DClass4</attrlabl>
-<attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh;Diameter class (5.0-9.99)</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Condition</attrlabl>
-<attrdef>link to tlu_Live_Dead</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Saplings</enttypl>
+                <enttypd>Sapling (&lt; 10 cm @ dbh) data</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Saplings_ID</attrlabl>
+                <attrdef>Identifier for tbl_Saplings</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_ID</attrlabl>
+                <attrdef>Link to tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Module</attrlabl>
+                <attrdef>Module of data collection, link to tlu_Mod_Num</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>spcode</attrlabl>
+                <attrdef>Seven letter species code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DClass1</attrlabl>
+                <attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh; Diameter class (0-0.99)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DClass2</attrlabl>
+                <attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh; Diameter class (1.0-2.49)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DClass3</attrlabl>
+                <attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh;Diameter class (2.5-4.99)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DClass4</attrlabl>
+                <attrdef>Woody Stems &gt;= 1.4 m height but &lt; 10 cm dbh;Diameter class (5.0-9.99)</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Condition</attrlabl>
+                <attrdef>link to tlu_Live_Dead</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Seedlings</enttypl>
-<enttypd>Seedling (woody stems &lt; 104 m in height) data</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Seedlings_ID</attrlabl>
-<attrdef>Identifier for tbl_Seedlings</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Event_ID</attrlabl>
-<attrdef>Link to tbl_Events</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>oldPlot</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Module</attrlabl>
-<attrdef>Module of sample, link to tlu_Mod_Num</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SpCode</attrlabl>
-<attrdef>Seven letter species code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Density</attrlabl>
-<attrdef>Stem tally by species within the nested 3.2 x 3.2 subplot</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Seedlings</enttypl>
+                <enttypd>Seedling (woody stems &lt; 104 m in height) data</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Seedlings_ID</attrlabl>
+                <attrdef>Identifier for tbl_Seedlings</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Event_ID</attrlabl>
+                <attrdef>Link to tbl_Events</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>oldPlot</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Module</attrlabl>
+                <attrdef>Module of sample, link to tlu_Mod_Num</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SpCode</attrlabl>
+                <attrdef>Seven letter species code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Density</attrlabl>
+                <attrdef>Stem tally by species within the nested 3.2 x 3.2 subplot</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_Tree_Tags</enttypl>
-<enttypd>Tree tag and location data</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Tree_Tag_ID</attrlabl>
-<attrdef>Identifier for tbl_Tree_Tags</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Location_ID</attrlabl>
-<attrdef>Link to tbl_Locations</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Tag</attrlabl>
-<attrdef>Tag number of the tree</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>oldPlot</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Module</attrlabl>
-<attrdef>Module number</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Xcoord</attrlabl>
-<attrdef>horizontal location of the tree to the nearest .5 m</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Ycoord</attrlabl>
-<attrdef>vertical location of the tree to the nearest .5 m</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SpCode</attrlabl>
-<attrdef>seven letter species code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Plot</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Notes</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_Tree_Tags</enttypl>
+                <enttypd>Tree tag and location data</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Tree_Tag_ID</attrlabl>
+                <attrdef>Identifier for tbl_Tree_Tags</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Location_ID</attrlabl>
+                <attrdef>Link to tbl_Locations</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Tag</attrlabl>
+                <attrdef>Tag number of the tree</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>oldPlot</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Module</attrlabl>
+                <attrdef>Module number</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Xcoord</attrlabl>
+                <attrdef>horizontal location of the tree to the nearest .5 m</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Ycoord</attrlabl>
+                <attrdef>vertical location of the tree to the nearest .5 m</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SpCode</attrlabl>
+                <attrdef>seven letter species code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Plot</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Notes</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tbl_WitnessTrees</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>WitnessTree_ID</attrlabl>
-<attrdef>Identifier for tbl_WitnessTrees</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Location_ID</attrlabl>
-<attrdef>Link to tbl_Location</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Witness_SpCode</attrlabl>
-<attrdef>Link to tbl_PlantSpecies; Seven digit species code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Witness_Azimuth</attrlabl>
-<attrdef>Azimuth from the witness tree to the end center rebar</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Witness_DBH</attrlabl>
-<attrdef>Diameter at breast height of the witness tree</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Witness_stake</attrlabl>
-<attrdef>Distance from the witness tree to the rebar</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Single</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tbl_WitnessTrees</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>WitnessTree_ID</attrlabl>
+                <attrdef>Identifier for tbl_WitnessTrees</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Location_ID</attrlabl>
+                <attrdef>Link to tbl_Location</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Witness_SpCode</attrlabl>
+                <attrdef>Link to tbl_PlantSpecies; Seven digit species code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Witness_Azimuth</attrlabl>
+                <attrdef>Azimuth from the witness tree to the end center rebar</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Witness_DBH</attrlabl>
+                <attrdef>Diameter at breast height of the witness tree</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Witness_stake</attrlabl>
+                <attrdef>Distance from the witness tree to the rebar</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Single</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Can_Pos</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>CanPos_Num</attrlabl>
-<attrdef>Identifier for tlu_CanopyPosition</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>CanPos_Name</attrlabl>
-<attrdef>Name of canopy position</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Can_Pos</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>CanPos_Num</attrlabl>
+                <attrdef>Identifier for tlu_CanopyPosition</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CanPos_Name</attrlabl>
+                <attrdef>Name of canopy position</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Cover_Cls</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>CoverClass_Num</attrlabl>
-<attrdef>Identifier for tlu_Cover_Cls</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>CoverClass_Text</attrlabl>
-<attrdef>Cover class description</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Cover_Cls</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>CoverClass_Num</attrlabl>
+                <attrdef>Identifier for tlu_Cover_Cls</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CoverClass_Text</attrlabl>
+                <attrdef>Cover class description</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_DecayStage</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>DecayStage_ID</attrlabl>
-<attrdef>decay stage identifier</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>DecayStage_Descr</attrlabl>
-<attrdef>Description of Decay Stage
-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_DecayStage</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>DecayStage_ID</attrlabl>
+                <attrdef>decay stage identifier</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DecayStage_Descr</attrlabl>
+                <attrdef>Description of Decay Stage
+                </attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Live_Dead</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Cond_Num</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Cond_Text</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Live_Dead</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Cond_Num</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Cond_Text</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Mod_Num</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Mod_Num</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Mod_Num</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Mod_Num</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_PlaceNames</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>ID</attrlabl>
-<attrdef>Identifier for tlu_PlaceNames</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Name</attrlabl>
-<attrdef>Geographic name from USGS</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>60</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>County</attrlabl>
-<attrdef>County name</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>7</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>State</attrlabl>
-<attrdef>State abbreviation</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>utmE</attrlabl>
-<attrdef>UTM easting coordinate</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>utmN</attrlabl>
-<attrdef>UTM northting coordinate</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_PlaceNames</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>ID</attrlabl>
+                <attrdef>Identifier for tlu_PlaceNames</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Name</attrlabl>
+                <attrdef>Geographic name from USGS</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>60</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>County</attrlabl>
+                <attrdef>County name</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>7</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>State</attrlabl>
+                <attrdef>State abbreviation</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>utmE</attrlabl>
+                <attrdef>UTM easting coordinate</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>utmN</attrlabl>
+                <attrdef>UTM northting coordinate</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_PlantSpecies</enttypl>
-<enttypd>Plant species list in GRSM</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>genus</attrlabl>
-<attrdef>genus</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>30</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>subgenus</attrlabl>
-<attrdef>subgenus</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>30</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>species</attrlabl>
-<attrdef>species</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>40</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>subspecies</attrlabl>
-<attrdef>subspecies</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SpeciesCode</attrlabl>
-<attrdef>7 letter species code, identifier for tlu_PlantSpecies</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Author</attrlabl>
-<attrdef>author</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>CommonName</attrlabl>
-<attrdef>common name</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>SpeciesNotes</attrlabl>
-<attrdef>notes of status/distribution of species</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_PlantSpecies</enttypl>
+                <enttypd>Plant species list in GRSM</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>genus</attrlabl>
+                <attrdef>genus</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>30</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>subgenus</attrlabl>
+                <attrdef>subgenus</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>30</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>species</attrlabl>
+                <attrdef>species</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>40</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>subspecies</attrlabl>
+                <attrdef>subspecies</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SpeciesCode</attrlabl>
+                <attrdef>7 letter species code, identifier for tlu_PlantSpecies</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Author</attrlabl>
+                <attrdef>author</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CommonName</attrlabl>
+                <attrdef>common name</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SpeciesNotes</attrlabl>
+                <attrdef>notes of status/distribution of species</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Presence</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Pres_Num</attrlabl>
-<attrdef>identifier for tlu_Presence, coded value for presence class</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Pres_Text</attrlabl>
-<attrdef>Description of presence class</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Presence</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Pres_Num</attrlabl>
+                <attrdef>identifier for tlu_Presence, coded value for presence class</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Pres_Text</attrlabl>
+                <attrdef>Description of presence class</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_R1_RestOfPlot</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Pres_Num</attrlabl>
-<attrdef>identifier for tlu_R1_RestOfPlot, coded value for presence class</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Integer</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Pres_Text</attrlabl>
-<attrdef>Description of presence class</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_R1_RestOfPlot</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Pres_Num</attrlabl>
+                <attrdef>identifier for tlu_R1_RestOfPlot, coded value for presence class</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Integer</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Pres_Text</attrlabl>
+                <attrdef>Description of presence class</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Roads_and_Trails</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>ListedName</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>60</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>ValidName</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>60</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Layer</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>20</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Notes</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Roads_and_Trails</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>ListedName</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>60</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ValidName</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>60</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Layer</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>20</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Notes</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Slope_Shape</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Shape</attrlabl>
-<attrdef>identifier for tlu_Slope_Shape</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>25</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Slope_Shape</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>identifier for tlu_Slope_Shape</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>25</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_topo_position</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>ID</attrlabl>
-<attrdef>identifier for tlu_topo_position</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Long Integer</attrtype>
-<attwidth>4</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>TopoPosition</attrlabl>
-<attrdef>description of topo position code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_topo_position</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>ID</attrlabl>
+                <attrdef>identifier for tlu_topo_position</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Long Integer</attrtype>
+                <attwidth>4</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TopoPosition</attrlabl>
+                <attrdef>description of topo position code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Tree_Cond</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>TreeCond_Num</attrlabl>
-<attrdef>identifier for tlu_Tree_Cond</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Double</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>TreeCond_Text</attrlabl>
-<attrdef>description of tree condition code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Tree_Cond</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>TreeCond_Num</attrlabl>
+                <attrdef>identifier for tlu_Tree_Cond</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Double</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TreeCond_Text</attrlabl>
+                <attrdef>description of tree condition code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tlu_Yes_No</enttypl>
-<enttypd>-no description-</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Yes_No</attrlabl>
-<attrdef>-no description-</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tlu_Yes_No</enttypl>
+                <enttypd>-no description-</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Yes_No</attrlabl>
+                <attrdef>-no description-</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tsys_App_Defaults</enttypl>
-<enttypd>Application table - Manages the application defaults.</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Project</attrlabl>
-<attrdef>Default project code</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Park</attrlabl>
-<attrdef>Default park</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>10</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>User_name</attrlabl>
-<attrdef>Current user</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Activity</attrlabl>
-<attrdef>Activity of current user</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>UTM_Zone</attrlabl>
-<attrdef>Default UTM zone</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>2</attwidth>
-<attrdomv>
-<udom>Unable to resolve domain.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Datum</attrlabl>
-<attrdef>Default datum</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>5</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Release_ID</attrlabl>
-<attrdef>Database release version of the report</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<edom>
-<edomv>20070309134113-289562463.760376</edomv>
-<edomvd>GRSM ATBI Plots Database v1.00 (3/31/2015)</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tsys_App_Defaults</enttypl>
+                <enttypd>Application table - Manages the application defaults.</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Project</attrlabl>
+                <attrdef>Default project code</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Park</attrlabl>
+                <attrdef>Default park</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>10</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>User_name</attrlabl>
+                <attrdef>Current user</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Activity</attrlabl>
+                <attrdef>Activity of current user</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>UTM_Zone</attrlabl>
+                <attrdef>Default UTM zone</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>2</attwidth>
+                <attrdomv>
+                    <udom>Unable to resolve domain.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Datum</attrlabl>
+                <attrdef>Default datum</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>5</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Release_ID</attrlabl>
+                <attrdef>Database release version of the report</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>20070309134113-289562463.760376</edomv>
+                        <edomvd>GRSM ATBI Plots Database v1.00 (3/31/2015)</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Link_file_path</attrlabl>
-<attrdef>Complete filename and directory that contains backend tables</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>255</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Backup_prompt_startup</attrlabl>
-<attrdef>Whether or not the application prompts for backups upon startup</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Boolean</attrtype>
-<attwidth>1</attwidth>
-<attrdomv>
-<edom>
-<edomv>False</edomv>
-<edomvd>False</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>True</edomv>
-<edomvd>True</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Link_file_path</attrlabl>
+                <attrdef>Complete filename and directory that contains backend tables</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>255</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Backup_prompt_startup</attrlabl>
+                <attrdef>Whether or not the application prompts for backups upon startup</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Boolean</attrtype>
+                <attwidth>1</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>False</edomv>
+                        <edomvd>False</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>True</edomv>
+                        <edomvd>True</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Backup_prompt_exit</attrlabl>
-<attrdef>Whether or not the application prompts for backups upon exiting</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Boolean</attrtype>
-<attwidth>1</attwidth>
-<attrdomv>
-<edom>
-<edomv>False</edomv>
-<edomvd>False</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>True</edomv>
-<edomvd>True</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Backup_prompt_exit</attrlabl>
+                <attrdef>Whether or not the application prompts for backups upon exiting</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Boolean</attrtype>
+                <attwidth>1</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>False</edomv>
+                        <edomvd>False</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>True</edomv>
+                        <edomvd>True</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Compact_be_exit</attrlabl>
-<attrdef>Whether or not the application compacts the back-end db upon exiting</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Boolean</attrtype>
-<attwidth>1</attwidth>
-<attrdomv>
-<edom>
-<edomv>False</edomv>
-<edomvd>False</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>True</edomv>
-<edomvd>True</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Compact_be_exit</attrlabl>
+                <attrdef>Whether or not the application compacts the back-end db upon exiting</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Boolean</attrtype>
+                <attwidth>1</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>False</edomv>
+                        <edomvd>False</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>True</edomv>
+                        <edomvd>True</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Verify_links_startup</attrlabl>
-<attrdef>Whether or not the application verifies table connections upon startup</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Boolean</attrtype>
-<attwidth>1</attwidth>
-<attrdomv>
-<edom>
-<edomv>False</edomv>
-<edomvd>False</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
-<attrdomv>
-<edom>
-<edomv>True</edomv>
-<edomvd>True</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Verify_links_startup</attrlabl>
+                <attrdef>Whether or not the application verifies table connections upon startup</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Boolean</attrtype>
+                <attwidth>1</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>False</edomv>
+                        <edomvd>False</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
+                <attrdomv>
+                    <edom>
+                        <edomv>True</edomv>
+                        <edomvd>True</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tsys_App_Releases</enttypl>
-<enttypd>Application table - Application release history.</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Release_ID</attrlabl>
-<attrdef>Unique identifier for the release</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Release_date</attrlabl>
-<attrdef>Date of the release</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Date</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Database_title</attrlabl>
-<attrdef>Title of the database</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>100</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Version_number</attrlabl>
-<attrdef>Version control number</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>20</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>File_name</attrlabl>
-<attrdef>Filename, used to identify older versions of the database</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Release_by</attrlabl>
-<attrdef>Person who made the release</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Release_notes</attrlabl>
-<attrdef>Release notes, which may include a summary of revisions</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Author_phone</attrlabl>
-<attrdef>Phone number of application author</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Author_email</attrlabl>
-<attrdef>Email address of application author</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Author_org</attrlabl>
-<attrdef>Organization (NPS Unit code) for the author's place of work</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>10</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Author_org_name</attrlabl>
-<attrdef>Name of organization for author's place of work</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>100</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tsys_App_Releases</enttypl>
+                <enttypd>Application table - Application release history.</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Release_ID</attrlabl>
+                <attrdef>Unique identifier for the release</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Release_date</attrlabl>
+                <attrdef>Date of the release</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Date</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Database_title</attrlabl>
+                <attrdef>Title of the database</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>100</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Version_number</attrlabl>
+                <attrdef>Version control number</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>20</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>File_name</attrlabl>
+                <attrdef>Filename, used to identify older versions of the database</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Release_by</attrlabl>
+                <attrdef>Person who made the release</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Release_notes</attrlabl>
+                <attrdef>Release notes, which may include a summary of revisions</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Author_phone</attrlabl>
+                <attrdef>Phone number of application author</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Author_email</attrlabl>
+                <attrdef>Email address of application author</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Author_org</attrlabl>
+                <attrdef>Organization (NPS Unit code) for the author's place of work</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>10</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Author_org_name</attrlabl>
+                <attrdef>Name of organization for author's place of work</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>100</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
-<detailed>
-<enttyp>
-<enttypl>tsys_Bug_Reports</enttypl>
-<enttypd>Application table - Application bugs and development history.</enttypd>
-<enttypds>NPS</enttypds>
-</enttyp>
-<attr>
-<attrlabl>Bug_ID</attrlabl>
-<attrdef>Unique identifier for each bug record</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Release_ID</attrlabl>
-<attrdef>Database release version of the report</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<edom>
-<edomv>20070309134113-289562463.760376</edomv>
-<edomvd>GRSM ATBI Plots Database v1.00 (3/31/2015)</edomvd>
-<edomvds>NPS</edomvds>
-</edom>
-</attrdomv>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>tsys_Bug_Reports</enttypl>
+                <enttypd>Application table - Application bugs and development history.</enttypd>
+                <enttypds>NPS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>Bug_ID</attrlabl>
+                <attrdef>Unique identifier for each bug record</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Release_ID</attrlabl>
+                <attrdef>Database release version of the report</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <edom>
+                        <edomv>20070309134113-289562463.760376</edomv>
+                        <edomvd>GRSM ATBI Plots Database v1.00 (3/31/2015)</edomvd>
+                        <edomvds>NPS</edomvds>
+                    </edom>
+                </attrdomv>
 
-</attr>
-<attr>
-<attrlabl>Report_date</attrlabl>
-<attrdef>Date the bug was reported</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Date</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Found_by</attrlabl>
-<attrdef>Person who found the bug</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Reported_by</attrlabl>
-<attrdef>Person who filled out this bug report</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Report_details</attrlabl>
-<attrdef>Nature of the bug report</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Fix_date</attrlabl>
-<attrdef>Date the bug was fixed</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Date</attrtype>
-<attwidth>8</attwidth>
-<attrdomv>
-<udom>No domain defined.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Fixed_by</attrlabl>
-<attrdef>Person who fixed the bug</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Text</attrtype>
-<attwidth>50</attwidth>
-<attrdomv>
-<udom>Field source not limited to list.</udom>
-</attrdomv>
-</attr>
-<attr>
-<attrlabl>Fix_details</attrlabl>
-<attrdef>Notes on fix</attrdef>
-<attrdefs>NPS</attrdefs>
-<attrtype>Memo</attrtype>
-<attwidth>0</attwidth>
-<attrdomv>
-<udom>Free entry text field.</udom>
-</attrdomv>
-</attr>
+            </attr>
+            <attr>
+                <attrlabl>Report_date</attrlabl>
+                <attrdef>Date the bug was reported</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Date</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Found_by</attrlabl>
+                <attrdef>Person who found the bug</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Reported_by</attrlabl>
+                <attrdef>Person who filled out this bug report</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Report_details</attrlabl>
+                <attrdef>Nature of the bug report</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Fix_date</attrlabl>
+                <attrdef>Date the bug was fixed</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Date</attrtype>
+                <attwidth>8</attwidth>
+                <attrdomv>
+                    <udom>No domain defined.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Fixed_by</attrlabl>
+                <attrdef>Person who fixed the bug</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Text</attrtype>
+                <attwidth>50</attwidth>
+                <attrdomv>
+                    <udom>Field source not limited to list.</udom>
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Fix_details</attrlabl>
+                <attrdef>Notes on fix</attrdef>
+                <attrdefs>NPS</attrdefs>
+                <attrtype>Memo</attrtype>
+                <attwidth>0</attwidth>
+                <attrdomv>
+                    <udom>Free entry text field.</udom>
+                </attrdomv>
+            </attr>
 
-</detailed>
+        </detailed>
 
-</eainfo>
+    </eainfo>
 </metadata>

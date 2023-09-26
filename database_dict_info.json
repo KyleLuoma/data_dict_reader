@@ -1,17 +1,10 @@
-[
-    {
-        "database" : "NorthernPlainsFireManagement",
-        "dictionary" : "ATBI_plots_20150511_atribs.xml",
-        "file_type" : "xml"
-    },
-    {
-        "database" : "NYSED_SRC2022",
-        "dictionary" : "SRC2022ReadMe_Group IV.pdf",
-        "file_type" : "pdf"
-    },
-    {
-        "database" : "NTSB",
-        "dictionary" : "CISS_Manual.pdf",
-        "file_type" : "pdf"
-    }
-]
+
+{
+    "NorthernPlainsFireManagement"  : "NPFM_plots_20150511_atribs.xml",
+    "NYSED_SRC2022"                 : "SRC2022ReadMe_Group IV.pdf",
+    "NTSB"                          : "CISS_Manual.pdf",
+    "ATBI"                          : "ATBI_plots_20150511_atribs.xml",
+    "KlamathInvasiveSpecies"        : "ISED_BE_FINAL_Metadata.xml",
+    "PacificIslandLandbirds"        : "PACN_landbirds_db_metadata_20211220.xml",
+    "SBODemoUS"                     : "SBOD_table_column_descriptions_combined.csv"
+}
