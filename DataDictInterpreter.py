@@ -153,6 +153,7 @@ Create a meaningful and concise database identifier using SQL compatible complet
 
         prompt = ""
         prompt_filename = f'{self.real_path}/prompts/' + self.filename
+        print("Looking for prompt file at " + prompt_filename)
 
         # check if prompt file exists
         file_exists = os.path.isfile(prompt_filename)
