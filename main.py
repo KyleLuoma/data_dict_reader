@@ -6,7 +6,8 @@ from DataDictInterpreter import *
 
 
 def main():
-    interpreter = PdfDataDictInterpreter('NYSED_SRC2022')
+    factory = DataDictInterpreterFactory('NYSED_SRC2022')
+    interpreter = factory.get_current_interpreter()
     # interpreter = XmlDataDictInterpreter(database_name='PacificIslandLandbirds')
 
     while True:

@@ -374,6 +374,7 @@ class DataDictInterpreterFactory():
         return self.data_dict_interpreter
     
     def get_new_interpreter(self, database_name: str) -> DataDictInterpreter:
+        print(os.path.realpath(__file__))
         db_file_xwalk = json.load(open('./database_dict_info.json', 'r'))
         data_dict_filename = db_file_xwalk[database_name]
         filetype = data_dict_filename.split('.')[-1]
