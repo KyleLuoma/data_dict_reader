@@ -1,7 +1,7 @@
 import DataDictInterpreter
 import json
 
-class DataDictInterpreterFactor():
+class DataDictInterpreterFactory():
 
     def __init__(self, database_name: str) -> DataDictInterpreter:
         db_file_xwalk = json.load(open('./database_dict_info.json', 'r'))
