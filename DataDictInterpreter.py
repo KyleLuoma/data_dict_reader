@@ -39,12 +39,13 @@ class DataDictInterpreter:
                 self.filename = self.filename.split("/")[-1]
 
         elif database_name != None:
-            real_path = os.path.realpath(__file__).replace('DataDictInterpreter.py', '')
+            real_path = os.path.realpath(__file__).replace('\\DataDictInterpreter.py', '').replace('\\', '/')
             db_file_xwalk = json.load(open(f'{real_path}/database_dict_info.json', 'r'))
             data_dict_filename = db_file_xwalk[database_name]
             filetype = data_dict_filename.split('.')[-1]
             self.data_dict_file = f"{real_path}/" + filetype + "/" + data_dict_filename
             self.filename = (database_name + "_fewshot.txt")
+            self.real_path = real_path
 
         from callgpt import call_gpt
         self.call_gpt = call_gpt
@@ -87,7 +88,7 @@ class DataDictInterpreter:
         if user_approval.strip().lower() == 'y':
             
             print(f"Saving prompt file as {self.filename}")
-            new_prompt_file = open(f"./prompts/{self.filename}", 'w')
+            new_prompt_file = open(f"{self.real_path}/prompts/{self.filename}", 'w')
             new_prompt_file.write(prompt)
             new_prompt_file.write("""
 Using the following text extracted from a data dictionary:
@@ -151,7 +152,7 @@ Create a meaningful and concise database identifier using SQL compatible complet
         context_str = "\n".join(context[:limit_ix])
 
         prompt = ""
-        prompt_filename = './prompts/' + self.filename
+        prompt_filename = f'{self.real_path}/prompts/' + self.filename
 
         # check if prompt file exists
         file_exists = os.path.isfile(prompt_filename)
@@ -165,8 +166,8 @@ Create a meaningful and concise database identifier using SQL compatible complet
             print(f"\nAttempting to load dictionary specific prompt file {prompt_filename}")
             prompt_file = open(prompt_filename, 'r')
         except:
-            print("\n WARNING: No dictionary-specific prompt exists, using default fewshot prompt ./prompts/fewshot.txt instead.")
-            prompt_file = open('./prompts/fewshot.txt', 'r')
+            print(f"\n WARNING: No dictionary-specific prompt exists, using default fewshot prompt {self.real_path}/prompts/fewshot.txt instead.")
+            prompt_file = open(f'{self.real_path}/prompts/fewshot.txt', 'r')
 
         prompt = prompt_file.read()
         prompt_file.close()
