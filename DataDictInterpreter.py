@@ -39,10 +39,11 @@ class DataDictInterpreter:
                 self.filename = self.filename.split("/")[-1]
 
         elif database_name != None:
-            db_file_xwalk = json.load(open('./database_dict_info.json', 'r'))
+            real_path = os.path.realpath(__file__).replace('DataDictInterpreter.py', '')
+            db_file_xwalk = json.load(open(f'{real_path}/database_dict_info.json', 'r'))
             data_dict_filename = db_file_xwalk[database_name]
             filetype = data_dict_filename.split('.')[-1]
-            self.data_dict_file = "./" + filetype + "/" + data_dict_filename
+            self.data_dict_file = f"{real_path}/" + filetype + "/" + data_dict_filename
             self.filename = (database_name + "_fewshot.txt")
 
         from callgpt import call_gpt
@@ -374,8 +375,9 @@ class DataDictInterpreterFactory():
         return self.data_dict_interpreter
     
     def get_new_interpreter(self, database_name: str) -> DataDictInterpreter:
-        print(os.path.realpath(__file__))
-        db_file_xwalk = json.load(open('./database_dict_info.json', 'r'))
+        real_path = os.path.realpath(__file__).replace('DataDictInterpreter.py', '')
+        db_file_xwalk = json.load(open(f'{real_path}/database_dict_info.json', 'r'))
+
         data_dict_filename = db_file_xwalk[database_name]
         filetype = data_dict_filename.split('.')[-1]
 
