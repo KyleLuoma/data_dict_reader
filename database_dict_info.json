@@ -6,5 +6,6 @@
     "ATBI"                          : "ATBI_plots_20150511_atribs.xml",
     "KlamathInvasiveSpecies"        : "ISED_BE_FINAL_Metadata.xml",
     "PacificIslandLandbirds"        : "PACN_landbirds_db_metadata_20211220.xml",
-    "SBODemoUS"                     : "SBOD_table_column_descriptions_combined.csv"
+    "SBODemoUS"                     : "SBOD_table_column_descriptions_combined.csv",
+    "ASIS_20161108_HerpInv_Database": "ASIS_20161108_HerpInv_Database_Final_2236826.xml"
 }
