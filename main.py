@@ -6,7 +6,7 @@ from DataDictInterpreter import *
 
 
 def main():
-    factory = DataDictInterpreterFactory('NYSED_SRC2022')
+    factory = DataDictInterpreterFactory('SBODemoUS')
     interpreter = factory.get_current_interpreter()
     # interpreter = XmlDataDictInterpreter(database_name='PacificIslandLandbirds')
 
@@ -14,7 +14,7 @@ def main():
         user_input = input("Enter a database identifier: ")
         if user_input == 'quit':
             break
-        natural_identifier = interpreter.getNaturalIdentifier(user_input)
+        natural_identifier = interpreter.getNaturalIdentifier(user_input, verbose=True)
         print(natural_identifier)
 
 

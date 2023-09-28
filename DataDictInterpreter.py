@@ -68,19 +68,50 @@ class DataDictInterpreter:
             None
         
         """
+
+        prompt_template = """
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:
+"""
+
+        running_example_prompt = ""
         num_good_examples = 0
         good_examples = []
+
         print(f"This is the interactive fewshot prompt builder. At the prompt, provide a valid database identifier for the document. Confirm whether the generated identifier is a good example.")
         while num_good_examples < num_examples:
             identifier_example = input(f"Enter example identifier {num_good_examples + 1}: ")
-            ctx = self.make_zero_shot_prompt(identifier_example)
+            zero_shot = self.make_zero_shot_prompt(identifier_example)
+            if num_good_examples > 0:
+                ctx = running_example_prompt + "\n" + zero_shot
+            else:
+                ctx = zero_shot
+            print(ctx)
             response = call_gpt(ctx)
+
             print(ctx)
             print(response)
             user_assessment = input(f"Is this a good example of an N1 representation of example identifier {identifier_example} (Y/n)?:")
+
             if user_assessment.strip().lower() == 'y':
                 good_examples.append("\n".join([ctx, response]))
                 num_good_examples += 1
+                running_example_prompt += "\n".join([ctx, response])
+            elif user_assessment.strip().lower() == 'n':
+                corrected = input("Please enter a corrected N1 representation of the example identifier or 'n' to skip:")
+                if corrected.strip().lower() == 'n' or corrected.strip().lower() == '':
+                    pass
+                else:
+                    good_examples.append("\n".join([ctx, corrected]))
+                    num_good_examples += 1
+                    running_example_prompt += "\n".join([ctx, corrected])
+            else:
+                print("Sorry, I didn't understand that. Please try again.")
+
+
         prompt = "\n".join(good_examples)
         print("This is the fewshot prompt we generated:")
         print(prompt)
@@ -90,13 +121,7 @@ class DataDictInterpreter:
             print(f"Saving prompt file as {self.filename}")
             new_prompt_file = open(f"{self.real_path}/prompts/{self.filename}", 'w')
             new_prompt_file.write(prompt)
-            new_prompt_file.write("""
-Using the following text extracted from a data dictionary:
-__CONTEXT__
-
-In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
-Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:
-""")
+            new_prompt_file.write(prompt_template)
         elif user_approval.strip().lower() == 'n':
             user_response = input("Sorry, would you like to try again (Y/n)?")
             if user_response.strip().lower() == 'y':
@@ -178,7 +203,7 @@ Create a meaningful and concise database identifier using SQL compatible complet
     
 
 
-    def getNaturalIdentifier(self, identifier: str) -> str:
+    def getNaturalIdentifier(self, identifier: str, verbose: bool = False) -> str:
         """ Returns the natural identifier for a database identifier
 
         Args:
@@ -189,6 +214,8 @@ Create a meaningful and concise database identifier using SQL compatible complet
         """
 
         prompt = self.make_few_shot_prompt(identifier)
+        if verbose:
+            print(prompt)
         response = self.call_gpt(prompt)
         response = response.split(",")
         if len(response) == 2:
@@ -368,6 +395,58 @@ class XmlDataDictInterpreter(DataDictInterpreter):
         return index
     
 
+
+class CsvDataDictInterpreter(DataDictInterpreter):
+    """
+    This class is used to interpret a CSV data dictionary
+    """
+
+    def __init__(self, database_name: str = None, data_dict_file: str = None):
+        super().__init__(database_name, data_dict_file)
+        print("Loading CSV")
+        self.csv = open(self.data_dict_file).read()
+        self.csv_header = self.csv.split('\n')[0]
+        print("Loaded CSV")
+        print("Indexing CSV")
+        self.index = self.index_dictionary_file(self.csv)
+        print("Indexed CSV")
+        self.beam_width = 3
+
+
+
+    def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
+        
+        if beam_width == None:
+            beam_width = self.beam_width
+        
+        identifier = identifier.lower()
+        lines = self.index[identifier]
+        print("DEBUG Lines:", lines)
+
+        start_ix = 0
+        stop_ix = min(len(lines), beam_width)
+
+        context_list = [self.csv_header]
+
+        for line in lines[start_ix:stop_ix]:
+            context_list.append(self.csv.split('\n')[line])
+
+        return context_list
+
+
+
+    def index_dictionary_file(self, file_obj) -> defaultdict:
+        
+        # Line level indexing
+        index = defaultdict(list)
+        for ix, line in enumerate(self.csv.split('\n')):
+            for word in line.split(','):
+                index[word.lower()].append(ix)
+
+        return index
+
+
+
 class DataDictInterpreterFactory():
 
     def __init__(self, database_name: str) -> DataDictInterpreter:
@@ -389,4 +468,8 @@ class DataDictInterpreterFactory():
         
         if filetype == "pdf":
             self.data_dict_interpreter =  PdfDataDictInterpreter(database_name)
+            return self.data_dict_interpreter
+        
+        if filetype == "csv":
+            self.data_dict_interpreter =  CsvDataDictInterpreter(database_name)
             return self.data_dict_interpreter
