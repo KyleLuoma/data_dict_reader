@@ -74,7 +74,8 @@ Using the following text extracted from a data dictionary:
 __CONTEXT__
 
 In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
-Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:
 """
 
         running_example_prompt = ""
@@ -97,17 +98,18 @@ Create a meaningful and concise database identifier using SQL compatible complet
             user_assessment = input(f"Is this a good example of an N1 representation of example identifier {identifier_example} (Y/n)?:")
 
             if user_assessment.strip().lower() == 'y':
-                good_examples.append("\n".join([ctx, response]))
+                good_examples.append("\n".join([zero_shot, response]))
                 num_good_examples += 1
-                running_example_prompt += "\n".join([ctx, response])
+                running_example_prompt += "\n".join([zero_shot, response])
             elif user_assessment.strip().lower() == 'n':
                 corrected = input("Please enter a corrected N1 representation of the example identifier or 'n' to skip:")
                 if corrected.strip().lower() == 'n' or corrected.strip().lower() == '':
                     pass
                 else:
-                    good_examples.append("\n".join([ctx, corrected]))
+                    corrected = f"{identifier_example}, {corrected}"
+                    good_examples.append("\n".join([zero_shot, corrected]))
                     num_good_examples += 1
-                    running_example_prompt += "\n".join([ctx, corrected])
+                    running_example_prompt += "\n".join([zero_shot, corrected])
             else:
                 print("Sorry, I didn't understand that. Please try again.")
 
