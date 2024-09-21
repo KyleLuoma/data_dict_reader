@@ -26,11 +26,10 @@ def main():
 
 
 def test_driver():
-    interpreter = XmlDataDictInterpreter('./xml/ATBI_plots_20150511_atribs.xml')
+    interpreter = JsonDataDictInterpreter('car_1')
     # ctx = interpreter.make_zero_shot_prompt('MPD')
     # print(ctx)
-    interpreter.interactive_prompt_builder()
-
+    print(interpreter.index)
 
 if __name__ == '__main__':
     # test_driver()

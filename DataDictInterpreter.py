@@ -447,6 +447,74 @@ class CsvDataDictInterpreter(DataDictInterpreter):
 
 
 
+class JsonDataDictInterpreter(DataDictInterpreter):
+    """
+    This class is used to interpret a JSON data dictionary
+    """
+    def __init__(self, database_name: str = None, data_dict_file: str = None):
+        super().__init__(database_name, data_dict_file)
+        print("Loading JSON")
+        self.json_text = open(self.data_dict_file, 'r').read()
+        json_text = self.json_text.replace('\n', ' ').replace('\t', ' ')
+        for t in [":", "{", "}", "[", "]", '\\"', '"']:
+            json_text = json_text.replace(t, f" {t} ")
+        json_text = json_text.lower()
+        while '  ' in json_text:
+            json_text = json_text.replace('  ', ' ')
+        self.json_list = json_text.split(' ')
+        print("Loaded JSON")
+        print("Indexing JSON")
+        self.index = self.index_dictionary_file(self.json_text)
+        print("Indexed JSON")
+        self.beam_width = 60
+
+
+
+    def get_context_around_identifier(self, identifier: str, beam_width: int = None) -> list:
+        """ Returns the context around an identifier in a data dictionary
+
+        Args:
+            identifier: The identifier to get the context around
+            beam_width: The number of words to include on either side of the identifier
+
+        Returns:
+            A list of strings containing the context around the identifier
+        """
+        if beam_width == None:
+            beam_width = self.beam_width
+
+        identifier = identifier.lower()
+        locations = self.index[identifier]
+
+        context_list = []
+
+        for loc in locations:
+            start_ix = max(0, loc - 1)
+            stop_ix = min(len(self.json_list), loc + beam_width)
+            context_list.append(" ".join(self.json_list[start_ix : stop_ix]))
+
+        print(context_list)
+
+        return context_list
+
+
+
+    def index_dictionary_file(self, file_obj) -> defaultdict:
+        """ Indexes a JSON data dictionary file
+
+        Args:
+            file_obj: A string containing the text of the XML data dictionary
+
+        Returns:
+            A defaultdict mapping words to a list of locations in the document
+        """
+        index = defaultdict(list)
+        for ix, word in enumerate(self.json_list):
+            index[word].append(ix)
+        return index
+
+
+
 class DataDictInterpreterFactory():
 
     def __init__(self, database_name: str) -> DataDictInterpreter:
@@ -472,4 +540,8 @@ class DataDictInterpreterFactory():
         
         if filetype == "csv":
             self.data_dict_interpreter =  CsvDataDictInterpreter(database_name)
+            return self.data_dict_interpreter
+        
+        if filetype == "json":
+            self.data_dict_interpreter = JsonDataDictInterpreter(database_name)
             return self.data_dict_interpreter

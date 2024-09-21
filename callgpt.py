@@ -14,13 +14,12 @@ def call_gpt(
     f = open('.local/openai.json')
     openai_params = json.load(f)
     f.close()
-    openai.api_key = openai_params['api_key']
-    # openai.Model.list()
     num_attempts = 0
+    client = openai.OpenAI(api_key=openai_params['api_key'])
     while try_again and num_attempts < max_attempts:
         num_attempts += 1
         try:
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model=model,
                 messages=[
                     {
@@ -33,7 +32,7 @@ def call_gpt(
                 frequency_penalty=openai_params['frequency_penalty'],
                 presence_penalty=openai_params['presence_penalty'],
                 stop=["\n"]
-                )
+            )
             try_again = False
         except Exception as e:
             print("Got an error, trying again...")
@@ -45,7 +44,8 @@ def call_gpt(
 
     if verbose:
         print("\nGPT response:")
-        for choice in response["choices"]:
-            print(choice["message"]["content"])
+        for choice in response.choices:
+            print(choice.message.content)
         print("\n")
-    return response["choices"][0]["message"]["content"]
+    # return response["choices"][0]["message"]["content"]
+    return response.choices[0].message.content

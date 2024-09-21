@@ -1,0 +1,242 @@
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier id:
+
+id, id
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier id:
+
+id, id
+
+Using the following text extracted from a data dictionary:
+specific tonnage measurements, such as \"5000 tons,\" or general descriptions like \"lightweight\" or \"heavy cargo.\" this column is used to provide a qualitative or quantitative indication of the ship's carrying capacity.",
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier tonnage:
+
+tonnage, tonnage
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier id:
+
+id, id
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier injured:
+
+injured, injured
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier id:
+
+id, id
+
+Using the following text extracted from a data dictionary:
+specific tonnage measurements, such as \"5000 tons,\" or general descriptions like \"lightweight\" or \"heavy cargo.\" this column is used to provide a qualitative or quantitative indication of the ship's carrying capacity.",
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier tonnage:
+
+tonnage, tonnage
+
+Using the following text extracted from a data dictionary:
+
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier disposition_of_ship:
+
+disposition_of_ship, disposition_of_ship
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:
